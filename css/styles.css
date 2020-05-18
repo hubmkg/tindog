@@ -1,0 +1,189 @@
+body {
+  /* sets font for entire webpage */
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+/* multiple selectors */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat-Bold;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* headings */
+.big-heading {
+  font-family: Montserrat-black;
+  font-size: 3.5rem;
+  line-height: 1.5
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Sections */
+.colored-section {
+  background-color: #ff4c68;
+  color: #ffffff;
+}
+
+.white-section {
+  background-color: #ffffff;
+}
+
+.container-fluid {
+  /* top,left&right, bottom */
+  padding: 7% 15%;
+}
+
+/* Navigation Bar */
+.navbar {
+  /* three values: top,right & left,bottom */
+  padding: 0 0 4.5rem;
+}
+
+.nav-item {
+  /* top & bottom,left,right */
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-family: Montserrat-light;
+  font-size: 1.2rem;
+}
+
+.navbar-brand {
+  font-family: Ubuntu;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Download Buttons */
+.download-button {
+  /* top,right,bottom,left */
+  margin: 5% 3% 5% 0;
+}
+
+/* title section */
+#title .container-fluid {
+  padding: 3% 15% 7%;
+  text-align: left;
+}
+
+/* Title image */
+/* rotate cell phone image,reduce size of image to 60% of container */
+/* set position absolute so it drops out of html flow */
+/* z-index of image is 0 by default */
+/* scoot image to right */
+.title-image {
+  transform: rotate(25deg);
+  width: 60%;
+  position: absolute;
+  right: 30%;
+}
+
+/* Nota Bene: the code above and below work together to get the iphone to */
+/* slide down and underneath the features section */
+/* Features section */
+#features {
+  /* padding: top & bottom, left & right of the parent container */
+  /* set position relative for z-index to work */
+  /* raise stacking order with z-index=1 so iphone image stacks below it */
+  /* set bg color to white so it covers the iphone */
+  /* note: z-index=1 is optional in this case becuase of the html stacking order */
+  position: relative;
+  z-index: 1;
+}
+
+.feature-box {
+  z-index: 1;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+/* symbols or icons are specifically targeted */
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+
+/* change icon's color when cursor moves over them */
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* Testimonial Section */
+#testimonials {
+  background-color: #ef8172;
+}
+
+.testimonial-image {
+  /* make image smaller */
+  width: 20%;
+  /* make image round */
+  border-radius: 100%;
+  /* add space all around image */
+  margin: 20px;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Press Section */
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  /* change width to make images smaller, 15% of container size */
+  width: 15%;
+  /* add some space to top, left & right, bottom  */
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* Call To Action Section */
+#footer .container-fluid {
+  padding: 0;
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+.copyright {
+  margin-top: 2%;
+}
+
+/* css media query */
+/* when max width of device becomes 990 pixels, activate this code */
+/* place image back into html flow, z-index code is then ignored */
+/* also, rotate phone back into vertical position */
+@media (max-width: 990px) {
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
