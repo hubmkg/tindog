@@ -132,6 +132,18 @@ p {
   margin: 20px;
 }
 
+.daisy-image {
+  width: 75%;
+}
+
+.auggie-image {
+  width: 36%;
+}
+
+.jake-image {
+  width: 35%;
+}
+
 .testimonial-text {
   font-size: 3rem;
   line-height: 1.5;
